@@ -1,3 +1,5 @@
+*, *::before, *::after { box-sizing: border-box }
+
 /* Color Palette
 #2B2D42 - color 1 (Midnight)
 #8D99AE - color 2 (Slate)
@@ -21,16 +23,17 @@ h1, h2, h3 {
     margin: 0.2em 0;
 }
 h1 { font-size: 2.2rem; font-weight: 700; }
-h2 { font-size: 1.6rem; font-weight: 600; }
+h2 { font-size: 1.6rem; font-weight: 600; margin-top: 0; }
 h3 { font-size: 1.2rem; font-weight: 600; }
 
 a { color: #EF233C; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-.wrapper {
-    max-width: 900px;
+.content-wrapper {
+    max-width: 950px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 16px;
+    overflow: hidden;
 }
 
 /* Header & Footer 
@@ -41,14 +44,26 @@ a:hover { text-decoration: underline; }
     text-align: center;
     padding: 24px 16px;
 }
-.profile-pic {
-    width: 140px;
-    height: 140px;
+.profile-pic { /*removed weight */
+    height: auto;
     border-radius: 50%;
     display: block;
-    margin: 0 auto 12px auto;
+    max-width: 100%;
+}
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
 }
 
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+.job { overflow: hidden; margin-bottom: 16px; }
 /* Work Experience
 ------------------------------------*/
 .work {
@@ -72,6 +87,12 @@ a:hover { text-decoration: underline; }
     color: #FFFFFF;
     text-align: center;
     padding: 24px 16px;
+    text-align: center;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
 }
 .site-footer a { color: #EDF2F4; }
 .site-footer a:hover { text-decoration: underline; }
