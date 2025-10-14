@@ -29,7 +29,7 @@ h3 { font-size: 1.2rem; font-weight: 600; }
 a { color: #EF233C; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-.content-wrapper {
+.content-wrap {
     max-width: 950px;
     margin: 0 auto;
     padding: 50px;
@@ -92,12 +92,12 @@ a:hover { text-decoration: underline; }
     float: none;
     width: 100%;
     padding: 0;
-    text-align: center;
+    text-align: left;
 }
 
 .site-header .profile-pic {
     width: 140px;
-    heiht: 140px;
+    height: 140px;
     margin: 0 auto 12px;
     border-radius: 50%;
 }
@@ -107,7 +107,7 @@ a:hover { text-decoration: underline; }
 .site-header p { 
     color: #EDF2F4;
     max-width: 65ch;
-    margin: 10px auto 0;
+    margin: 10px 0 0;
 }
 
 .site-footer a { color: #EDF2F4; }
