@@ -92,7 +92,7 @@ a:hover { text-decoration: underline; }
     float: none;
     width: 100%;
     padding: 0;
-    text-align: left;
+    text-align: center;
 }
 
 .site-header .profile-pic {
